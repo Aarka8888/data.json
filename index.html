@@ -7,22 +7,35 @@
     <title>Assignment Search Words</title>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="memory.html">Save Every Words</a>
+    </nav>
+
+    <h1>Language Study App</h1>
+
     <div class="Container">
-        <input type="text" id="main"  placeholder="Search Words">
+        <input type="text" id="main"  placeholder="Enter Words">
         <select class="select">
             <option value="Select">Select Feature</option>
-                <option value="word">All</option>
+                <option value="all">All</option>
                 <option value="definition">Definition</option>
                 <option value="examples">Examples</option>
                 <option value="synonyms">Synonyms</option>
                 <option value="antonyms">Antonyms</option>
                 
         </select>
-        
+        <button class="search-btn">Search</button>
 
     </div>
 
+        <div id="results"></div>
+        
+
+    
+
     <script src="/main.js"></script>
+    <script src="memory.js"></script>
     
 </body>
 </html>

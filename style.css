@@ -1,34 +1,85 @@
 body {
     padding: 0;
-    margin: 0;
+    margin: 10px;
     box-sizing: border-box;
 }
 
-.Container{
-    
+.Container {
+    max-width: 400px;
     margin: 0 auto;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    justify-content: center;
-    margin-block: 20px;
-    padding: 20px;
-
-}
-
-#main{
-    margin: 10px;
-    padding: 10px;
-    width: 500px;
-    background-color: rgba(20, 204, 103, 0.459);
     text-align: center;
 }
-.select{
-    width: 150px;
-    padding: 10px;
-    background-color: rgba(189, 164, 24, 0.644);
+
+.Container input[type="text"],
+.Container select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 4px solid #3228ca;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    transition: border-color 0.3s;
 }
-.select:hover{
-background-color: chartreuse;
+
+.Container input[type="text"]:focus,
+.Container select:focus {
+    border-color: #20bd35;
 }
+
+.Container .search-btn {
+    display: inline-block;
+    padding: 15px 24px;
+    background-color: #ce10b483;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Container .search-btn:hover {
+    background-color: #31b67f;
+}
+
+/* #results {
+    margin-top: 20px;
+} */
+
+
+nav {
+    background-color: #1fd43dcc;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #110f0f;
+    text-decoration: none;
+    margin: 10px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #5900ff;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: #0d2c54;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 40px 0;
+    text-shadow: 5px 2px 2px rgba(24, 197, 90, 0.555);
+}
+
